@@ -1,0 +1,133 @@
+body{
+    margin: 0px;
+    background-color: rgb(204, 194, 181);
+}
+
+.top-nav{
+    display: flex;
+    background-color: rgb(245, 239, 239);
+    color: black;
+    
+}
+
+.left-nav{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 3%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#get-started{
+  background-color: green;
+  width: 100px;
+  border: 10px solid green;
+  border-radius: 25px;
+  color: white;
+}
+
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.block-A{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(173, 172, 172); */
+    width: 100%;
+    height: 20rem;
+}
+#block-A-Text{
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.block-B{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.block-C{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+    background: green;
+    padding: 5px; 
+    width: 100px;
+    height: 100px; 
+    margin-top: 50px;
+
+}
+.circle1{
+    background: green;
+   
+
+}
+.circle2{
+    background: gray;
+    
+}
+.circle3{
+    background: green;
+}
+.circle4{
+    background: gray; 
+}
+.circle5{
+    background: green; 
+}
+
+.footer{
+    display: flex;
+    background-color: rgb(71, 52, 52);
+    color: white;
+    margin-top: 25px;
+}
+.footer-logo{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+}
+.left-footer{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    padding: 3%;
+}
+.sub-left-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.right-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 1%;
+}
+
