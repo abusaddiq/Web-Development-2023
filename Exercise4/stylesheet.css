@@ -51,6 +51,10 @@ body{
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
 }
+.logo-block-A{
+    width: 100px;
+    height: 100px;
+}
 
 .block-B{
     display: flex;
@@ -62,10 +66,8 @@ body{
 }
 
 .block-C{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 250px;
 }
 .circle{
     border-radius: 50%;
@@ -73,26 +75,37 @@ body{
     padding: 5px; 
     width: 100px;
     height: 100px; 
-    margin-top: 50px;
-
+    position: relative;
 }
 .circle1{
     background: green;
-   
-
+    position: absolute;
+    top: 34.375rem;
+    left: 500px;
 }
 .circle2{
     background: gray;
-    
+    position: absolute;
+    top: 34.375rem;
+    left: 550px;
 }
 .circle3{
     background: green;
+    position: absolute;
+    top: 34.375rem;
+    left: 600px;
 }
 .circle4{
     background: gray; 
+    position: absolute;
+    top: 34.375rem;
+    left: 650px;
 }
 .circle5{
-    background: green; 
+    background: green;
+    position: absolute;
+    top: 34.375rem;
+    left: 700px; 
 }
 
 .footer{
