@@ -6,8 +6,7 @@ body{
 .top-nav{
     display: flex;
     background-color: rgb(245, 239, 239);
-    color: black;
-    
+    color: black;    
 }
 
 .left-nav{

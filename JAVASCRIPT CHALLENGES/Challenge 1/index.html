@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1</title>
+</head>
+<!-- YolaSoft
+1) Create a basic page in HTML.
+2) Using a prompt box, prompt the user to supply his or her name.
+3) Save the name in a variable.
+4) Then, using a document.write() statement, use the information stored in variables to display Hello username! in big, bold letters, i.e. surrounded by <h1> tags.
+5) username should, of course, be what the user actually typed into the prompt box. Using the same variable, also display Hello username! in an alert message on the same page.
+6) Commit the new code to GitHub.
+7) Share the link to the file on your group slack channel.
+ -->
+
+ <body>
+    <script>
+    // Using a prompt box, prompt the user to supply his or her name.
+         var name = prompt("Enter your name: ", "");
+    // Save the name in a variable.
+
+    if (confirm("Hello " + name + "!")) {
+    // Using a document.write() statement, use the information stored in variables to display Hello username! in big, bold letters,
+       document.write("<h1>Hello " + name + "!</h1>");
+    } 
+    </script>
+</body>
+</html>
