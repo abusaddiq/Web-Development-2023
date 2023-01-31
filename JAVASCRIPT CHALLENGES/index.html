@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center ;"> Challenge 2 </h1>
+    <script>
+        
+        alert("You are welcome, press ok to calculate your grade :");
+
+        function gradeScore(score) {
+           let result;
+            if (score <= 100 && score >= 70) {
+                result = "Grade = A";
+                alert("Excellent");
+            }
+
+                 else if (score < 70 && score >= 60) {
+                    result = "Grade = B"; 
+                    alert("Very Good");
+                }
+                 else if (score < 60 && score >= 50) {
+                    result = "Grade = C"; 
+                    alert("Good");
+                }
+                 else if (score < 50 && score >= 40) {
+                    result = "Grade = D";
+                    alert("Pass");
+                }
+                 else if (score < 40 && score >= 0) {
+                    result = "Grade = F"; 
+                    alert("Poor");
+                }
+                else {
+                    result = "Invalid";
+                    alert("This is an invalid Score!!");
+                }
+                return result;            
+        }
+
+                document.write(gradeScore(prompt(" Please Enter your score : ")));
+                alert("Your Grade is :" + result)
+
+                
+    </script>
+</body>
+</html>
