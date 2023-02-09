@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3</title>
+</head>
+<body>
+    <h1> CHALLENGE 3 </h1>
+    <p id="cars"></p>
+    <!-- CHALLENGES 3 - Cars Listing
+            Define an array named cars and put these items into it: toyota, honda, mazda, mitsubishi, tesla, lexus
+            Log first item and last item into console. For last item use length property.
+            Add an item mercedes-benz to the array  and log it to the console.
+            Loop through all items of the array and log them to the console
+            Commit the new code to GitHub.
+            Share the link to the file on slack channel.
+ -->
+    <script>
+
+        // Define an array named cars and put these items into it: toyota, honda, mazda, mitsubishi, tesla, lexus
+        var cars = new Array("toyota ", "honda ", "mazda ", "mitsubishi ", "tesla ", "lexus ");
+        console.log(cars);
+
+        // Log first item
+        var first_item = cars[0];
+        console.log(first_item);
+
+        // Log Last item. For last item use length property.
+        var last_item = cars[cars.length - 1];
+        console.log(last_item);
+
+        // Add an item mercedes-benz to the array
+        cars.add("marcedes-benz");
+        console.log(cars);
+
+        // Loop through all items of the array
+        for (var i = 0; i < cars.length; i++){
+            console.log(cars[i]);
+        }
+    </script>
+
+</body>
+</html>
