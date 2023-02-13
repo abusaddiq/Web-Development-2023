@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 8</title>
+    <style>
+        table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <!-- 
+        CHALLENGES 8 - Avatar attribute Use the following code
+Step 1- This webpage displays a table of avatars, with a list of characteristics and images for each one. In this challenge, you'll change attributes of the images in JS. Using the variable that we've already created, use a for loop to iterate through the images and change the height attribute of each image. If you've done it right, you should see the images change size.
+Step 2 - Now, use JS to add 'tooltips' to each image. A tooltip is a little bit of text that shows up when you hover over an element. You can use the title attribute to set basic tooltips on HTML tags. In your for loop, set the title attribute of each image to the value of that image's alt attribute. You can test that it worked by hovering over the images after.
+Step 3 - Push your codes to your Github.
+
+     -->
+
+     <table id="t01">
+        <tr>
+          <th>Image</th>
+          <th>Characteristics</th> 
+        </tr>
+        <tr>
+          <td> <img src="cat.jpeg" alt="Cat" height="80rem"> </td>
+          <td>Typically, cats are creatures of habit; they are inquisive, but not adventurous and are easily upset by sudden changes of routine. </td>
+       
+        </tr>
+        <tr>
+          <td> <img src="dog.jpeg" alt="Dog" height="70rem"> </td>
+          <td>Dog are known to be faithful and loyal companions, protective of their masters and territory</td>
+          
+        </tr>
+      </table>
+
+      <button type="button" onclick="button()"> Click me </button>
+
+      <script>
+        var photos = document.getElementsByTagName("img")
+            function button(){
+                for(i=0; i<photos.length;i++){
+            photos[i].style.height ='30rem'
+    }
+        }
+      </script>
+</body>
+</html>

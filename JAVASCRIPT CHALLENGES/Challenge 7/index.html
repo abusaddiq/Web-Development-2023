@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 7</title>
+</head>
+<body>
+    <!-- 
+        CHALLENGES 7 - 
+                Query Modernizer Use the following code
+            Step 1- This webpage displays a selection of Isaac Newton's Queries, a book from the 1700s. Back then, 
+            Newton used the word 'doth' instead of 'does', because that's how English was spoken. 
+            In this challenge, you'll change all instances of 'doth' to 'does'. 
+            Each of them is surrounded by a <span> with a class of 'doth'.
+            For the first step, use document.querySelectorAll to find only the 'doth's that are inside the list, 
+            and store them in a variable.
+
+     -->
+<h1 id="heading"> Challenge 7 - Query Modernizer</h1>
+     <p>
+         Newton used the word  <span class="doth"> 'doth' </span> 
+     </p> 
+    
+
+    <button type="button" onclick="button()"> Click me </button>
+
+     <script>
+        var names = document.querySelectorAll(".doth");
+        names.innerHTML = "Changing doth to does";
+        console.log(names[0]);
+
+        function button(){
+            for(var i = 0; i<names.length; i++){
+                names[i].innerHTML = "instead of 'does' because that's how English was spoken.";
+            }
+        }
+    
+
+     </script>
+</body>
+</html>

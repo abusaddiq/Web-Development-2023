@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge6</title>
+</head>
+<body>
+    <!-- 
+        CHALLENGES 6 - Custom name tags 
+                Step 1- This webpage uses divs to create name tags for a few famous computer scientists. 
+                    In this challenge, you'll use JavaScript to change the text of all the h1s in the name tags. 
+                    In this first step, use document.getElementsByTagName to find all the headings, 
+                    and store them in a variable.
+                Step 2- Now that you've stored the headings in variables, use a for loop to iterate over them and change the text to something else, like 'Hello, world' or 'Allo'.
+                Step 3 - Push your codes to your Github.
+     -->
+     <div>
+        <h1> Rabiu Musa Kwankwaso </h1>
+        <h1> Abba Kabir Yusuf </h1>
+        <h1> Kawu Sumaila  </h1>
+     </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+<script>
+    var names = document.getElementsByTagName("h1");
+        names.innerHTML = "Hello Computer Scientist";
+        console.log(names[0]);
+
+    for(var i = 0; i<names.length; i++){
+        names[i].innerHTML = "Hello";
+    }
+</script>
+</body>
+</html>

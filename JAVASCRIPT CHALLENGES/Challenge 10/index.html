@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Challeng 10 </title>
+</head>
+<body>
+    <!-- 
+        CHALLENGES 10 - Cat Clicker Use the following code
+Step 1- In this challenge, you'll make it so the user (you!) can pet the cat and see it meow. 
+    In this first step, find the cat image element and store it in a variable.
+Step 2 - Now, define a callback function that changes the inner text of the 'cat-chat' div to say 'Meow', or whatever you think cats say when you pet them.
+Step 3 - Finally, assign the callback function as the event listener for the 'click' event for the cat image.
+Step 4 - Make sure you click the cat to check that it works! Cats love being petted. :)
+Step 5 - Push your codes to your Github.
+     -->
+
+    <img src="cat.jpeg" alt="cat">
+
+    <button type="button" onclick="button()" id="button" > click me </button>
+
+    <p id="pet"></p>
+    
+    <script>
+        
+        var catImage = document.getElementsByTagName("img"); //In this first step, find the cat image element and store it in a variable.
+       
+        function Cresponse(){
+            document.getElementById("pet").innerHTML = " 'Meow'"} //efine a callback function that changes the inner text of the 'cat-chat' div to say 'Meow'
+            document.getElementById("button").addEventListener("click" , Cresponse) //assign the callback function as the event listener
+    </script>
+    
+</body>
+</html>
